@@ -1,0 +1,117 @@
+#s_page {display: none;}
+
+.li_header
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.li_title
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	text-align: center;
+
+}
+.li_title a:link { color: #337ab7}
+.li_title a:visited { color: #778899;}
+.li_title a:hover { background-color: #337ab7; color:white; text-decoration:none;}
+.li_title a:hover mark{ background-color: #337ab7; color:white; text-decoration:none;}
+.li_title a { border-radius: 5px; padding:4px;}
+
+
+@media screen and (max-width: 768px)
+{
+	#s_page {display: block;}
+	#l_page {display: none;}
+}
+
+.page_container {
+	/* 각 페이지의 최소 높이를 정해준다. */
+	min-height:700px; 
+}
+mark {
+background:pink;color:#337ab7;border-radius:5px;
+}
+  /* navbar */
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #337ab7;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+	background: #337ab7;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #337ab7;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+	background: #337ab7;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+	background: #337ab7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #337ab7;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #337ab7;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+#comment_form, #post_delete, #post_modify
+{
+	display: none;
+}
